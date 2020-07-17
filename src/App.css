@@ -1,15 +1,205 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: hsl(120, 30%, 80%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .todo-list {
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 90%;
+  padding-inline-start: 0;
 }
 
 .todo-item {
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+  padding: 20px;
   width: 300px;
-  height: 100px;
   box-shadow: 0 20px 20px -10px gray;
   text-align: center;
   border-radius: 6px;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 275px;
+  margin: 20px 0;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  box-shadow: 0 20px 20px -10px gray;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.urgent-input {
+  display: flex;
+  justify-content: space-around;
+}
+
+.delete-button {
+  color: whitesmoke;
+  background-color: rgb(129, 44, 29);
+  border-radius: 6px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
 }
